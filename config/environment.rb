@@ -1,7 +1,7 @@
 require 'sqlite3'
 require 'pry'
 
-require_relative "../lib/rando"
-require_relative "../lib/student"
+require_relative "../lib/rando.rb"
+require_relative "../lib/student.rb"
 
 DB = {:conn => SQLite3::Database.new("db/students.db")}
