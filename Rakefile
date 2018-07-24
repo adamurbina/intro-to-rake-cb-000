@@ -29,6 +29,8 @@ end
 
 desc 'drop into the Pry console'
 task :console => :environment do
+    rake db:migrate
+    rake db:seed
     Pry.start
 end
 
