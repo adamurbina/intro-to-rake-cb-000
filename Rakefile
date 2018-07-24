@@ -32,6 +32,6 @@ task :console => :environment do
     Pry.start
 end
 
-task :blah do
+task :blah => :environment do
     require_relative './lib/rando.rb'
 end
