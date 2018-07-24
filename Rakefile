@@ -29,7 +29,7 @@ end
 
 desc 'drop into the Pry console'
 task :console => :environment do
-    rake blah
+    require_relative './lib/rando.rb'
     Pry.start
 end
 
